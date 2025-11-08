@@ -1,0 +1,214 @@
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  background-color: #f4f4f9;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #1c1f2a;
+  color: #d1d5db;
+}
+
+/* Override backgrounds in dark mode */
+body.dark section,
+body.dark .bg-light,
+body.dark .bg-gray-50 {
+  background-color: #2a2e3d !important;
+  color: #d1d5db;
+}
+
+/* Links */
+a {
+  transition: color 0.3s ease;
+}
+
+/* Fade Animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   HEADER
+========================================= */
+header {
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header button {
+  font-weight: 500;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+.hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+button,
+.btn {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.45);
+}
+
+/* Dark mode button */
+body.dark .btn-primary {
+  background: linear-gradient(to right, #7c3aed, #4f46e5);
+  color: #f0f4f8;
+}
+
+/* =========================================
+   FORMS
+========================================= */
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #f0f4f8;
+  color: #1e293b;
+  transition: all 0.25s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* Dark mode form */
+body.dark form input,
+body.dark form textarea {
+  border-color: #475569;
+  color: #d1d5db;
+  background-color: #2a2e3d;
+}
+
+/* =========================================
+   TESTIMONIAL CARDS
+========================================= */
+.testimonial-card {
+  background: #f0f4f8;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .testimonial-card {
+  background: #2a2e3d;
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.05);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+  background: #1c1f2a;
+  color: #94a3b8;
+  padding: 2rem 1rem;
+}
+
+footer a {
+  color: #cbd5e1;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* =========================================
+   WHATSAPP FLOATING BUTTON
+========================================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #25d366;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+  background: #22c35e;
+}
+
+/* =========================================
+   UTILITIES
+========================================= */
+.text-gradient {
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skripsi Pro – Platform bimbingan skripsi profesional untuk mahasiswa Indonesia." />
+  <meta name="author" content="Skripsi Pro" />
+  <link rel="canonical" href="https://skripsipro.id/" />
+
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Skripsi Pro" />
+  <meta property="og:description" content="Solusi bimbingan skripsi profesional, cepat, dan terpercaya untuk mahasiswa Indonesia." />
+  <meta property="og:image" content="assets/images/skripsi.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://cdn.tailwindcss.com https://kit.fontawesome.com https://images.unsplash.com https://randomuser.me;
+                 style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com;
+                 script-src 'self' https://cdn.tailwindcss.com https://kit.fontawesome.com;
+                 img-src 'self' data: https://*;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+  <title>Skripsi Pro</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d9d5b0b4.js" crossorigin="anonymous" defer></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/skripsi.png" type="image/x-icon" />
+
+  <!-- Smooth Scroll -->
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+
+<body class="antialiased text-gray-800 dark:bg-[#0f172a] dark:text-gray-100 relative">
+
+  <!-- LOADER -->
+  <div id="loader" class="fixed inset-0 bg-white dark:bg-black flex items-center justify-center z-50">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-indigo-600"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-6 shadow-md sticky top-0 z-40">
+    <nav class="container mx-auto flex justify-between items-center px-6">
+      <a href="index.html" class="text-2xl font-bold tracking-wide select-none">Skripsi Pro</a>
+      <button id="dark-mode-toggle"
+        class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg text-sm transition focus:outline-none focus:ring-2 focus:ring-white"
+        aria-pressed="false">
+        🌙 
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative text-center text-white py-28 bg-cover bg-center overflow-hidden"
+    style="background-image: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=80');"
+    aria-label="Latar belakang hero mahasiswa sedang belajar">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 max-w-3xl mx-auto fade-in-up px-4">
+      <h1 class="text-4xl font-extrabold mb-4">Solusi Tepat untuk Tugas Akhir Mahasiswa/Mahasiswi!</h1>
+      <p class="text-lg mb-6 opacity-90">Bimbingan profesional, cepat, dan terpercaya agar kamu lulus tanpa stres.</p>
+      <a href="#layanan"
+        class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl shadow hover:scale-105 transition inline-block focus:ring-2 focus:ring-white">
+        Mulai Sekarang
+      </a>
+    </div>
+  </section>
+
+  <main>
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-20 bg-gray-50 dark:bg-[#111827] fade-in-up">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Tentang Kami</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300 leading-relaxed">
+          Kami platform skripsi Pro yang membantu mahasiswa/mahasiswi dalam menulis, menganalisis, dan menyusun tugas akhir secara profesional.
+          Dengan mentor berpengalaman, kamu dapat menyelesaikannya lebih cepat, mudah, dan terarah.
+        </p>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="py-20 fade-in-up">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-10">Layanan Kami</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6 bg-white dark:bg-[#1e293b] rounded-2xl shadow-lg hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg mb-3">Bimbingan Online maupun Offline</h3>
+            <p class="text-gray-600 dark:text-gray-300">Konsultasi langsung dengan mentor ahli melalui platform interaktif kami.</p>
+          </div>
+          <div class="p-6 bg-white dark:bg-[#1e293b] rounded-2xl shadow-lg hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg mb-3">Analisis Data</h3>
+            <p class="text-gray-600 dark:text-gray-300">Pendampingan profesional untuk analisis data SPSS, AMOS, atau NVivo.</p>
+          </div>
+          <div class="p-6 bg-white dark:bg-[#1e293b] rounded-2xl shadow-lg hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg mb-3">Penyusunan Bab</h3>
+            <p class="text-gray-600 dark:text-gray-300">Bimbingan intensif dari Bab 1 hingga Bab 5 sesuai pedoman kampusmu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proses -->
+    <section class="py-20 bg-gray-50 dark:bg-[#0f172a] fade-in-up">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Proses Bimbingan</h2>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="p-6 bg-white dark:bg-[#1e293b] rounded-2xl shadow-lg">
+            <h3 class="font-semibold text-lg mb-2">1. Daftar</h3>
+            <p class="text-gray-600 dark:text-gray-300">Isi formulir dan terhubung dengan whatsapp.</p>
+          </div>
+          <div class="p-6 bg-white dark:bg-[#1e293b] rounded-2xl shadow-lg">
+            <h3 class="font-semibold text-lg mb-2">2. Konsultasi</h3>
+            <p class="text-gray-600 dark:text-gray-300">Mulai sesi online via chat atau video call.</p>
+          </div>
+          <div class="p-6 bg-white dark:bg-[#1e293b] rounded-2xl shadow-lg">
+            <h3 class="font-semibold text-lg mb-2">3. Revisi</h3>
+            <p class="text-gray-600 dark:text-gray-300">Dapatkan revisi dan masukan hingga siap sidang.</p>
+          </div>
+          <div class="p-6 bg-white dark:bg-[#1e293b] rounded-2xl shadow-lg">
+            <h3 class="font-semibold text-lg mb-2">4. Selesai</h3>
+            <p class="text-gray-600 dark:text-gray-300">Raih hasil akhir yang siap diuji dan disahkan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="py-20 fade-in-up">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Testimoni Mahasiswa</h2>
+        <div id="testimonial-container" class="grid md:grid-cols-3 gap-8"></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-r from-indigo-600 to-blue-500 text-white text-center fade-in-up">
+      <h2 class="text-3xl font-semibold mb-4">Siap Menyelesaikan Tugasmu?</h2>
+      <p class="mb-8 text-lg">Bergabung dengan ratusan mahasiswa yang sudah lulus bersama kami.</p>
+      <a href="https://wa.me/6287773665508" target="_blank" rel="noopener noreferrer"
+        class="bg-white text-blue-700 px-6 py-3 font-semibold rounded-xl shadow hover:scale-105 transition inline-block focus:ring-2 focus:ring-white">
+        Hubungi Kami Sekarang
+      </a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-8">
+    <p>© <span id="year"></span> Skripsi Pro. Semua Hak Dilindungi.</p>
+    <p class="mt-2">
+      <a href="contact.html" class="hover:underline">Kontak</a> |
+      <a href="privacy-policy.html" class="hover:underline">Kebijakan Privasi</a> |
+      <a href="terms.html" class="hover:underline">Syarat & Ketentuan</a>
+    </p>
+  </footer>
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/testimonials.js" defer></script>
+</body>
+</html>

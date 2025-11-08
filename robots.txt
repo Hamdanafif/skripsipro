@@ -1,0 +1,17 @@
+# ==========================================
+# robots.txt for Skripsi Pro
+# Optimized for SEO & security (2025)
+# ==========================================
+
+User-agent: *
+# Izinkan semua halaman utama untuk diindeks
+Allow: /
+
+# Tapi blokir folder internal yang tidak perlu diindeks
+Disallow: /assets/
+Disallow: /data/
+Disallow: /js/
+Disallow: /images/
+
+# Sitemap location
+Sitemap: https://skripsipro.id/sitemap.xml

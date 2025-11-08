@@ -1,0 +1,46 @@
+{
+  "name": "Bimbingan Skripsi Pro",
+  "short_name": "SkripsiPro",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "description": "Layanan profesional bimbingan skripsi online untuk mahasiswa di seluruh Indonesia.",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["education", "consulting", "service"],
+  "icons": [
+    {
+      "src": "/assets/images/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Hubungi Kami",
+      "short_name": "Kontak",
+      "url": "/contact.html"
+    },
+    {
+      "name": "Kebijakan Privasi",
+      "short_name": "Privasi",
+      "url": "/privacy-policy.html"
+    },
+    {
+      "name": "Syarat Layanan",
+      "short_name": "Syarat",
+      "url": "/terms.html"
+    }
+  ],
+  "prefer_related_applications": false
+}

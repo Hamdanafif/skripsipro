@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hubungi Skripsi Pro – Kami siap membantu Anda menyelesaikan skripsi dengan bimbingan profesional." />
+  <meta name="author" content="Skripsi Pro" />
+  <link rel="canonical" href="https://skripsipro.id/contact.html" />
+
+  <!-- SEO & OG -->
+  <meta property="og:title" content="Kontak Kami - Skripsi Pro" />
+  <meta property="og:description" content="Hubungi kami untuk layanan skripsi profesional, cepat, dan terpercaya." />
+  <meta property="og:image" content="assets/images/og-banner.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Security (CSP diperbarui) -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https://cdn.tailwindcss.com https://kit.fontawesome.com https://images.unsplash.com https://randomuser.me https://wa.me;
+                 style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com;
+                 script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://kit.fontawesome.com;
+                 img-src 'self' data: https://*;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+  <title>Kontak Kami | Skripsi Pro</title>
+
+  <!-- Tailwind & Font Awesome -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="https://kit.fontawesome.com/a2d9d5b0b4.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/skripsi.png" type="image/x-icon" />
+</head>
+
+<body class="antialiased text-gray-800 dark:bg-[#0f172a] dark:text-gray-100 relative">
+
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-6 shadow-md sticky top-0 z-40">
+    <nav class="container mx-auto flex justify-between items-center px-6">
+      <a href="index.html" class="text-2xl font-bold tracking-wide select-none"> Skripsi Pro</a>
+      <button id="dark-mode-toggle"
+        class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg text-sm transition focus:outline-none focus:ring-2 focus:ring-white"
+        aria-pressed="false">
+        🌙 
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative text-center text-white py-24 bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1603570417030-13e1e8b2b5ad?auto=format&fit=crop&w=1400&q=80');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 max-w-2xl mx-auto px-4">
+      <h1 class="text-4xl font-extrabold mb-4">Hubungi Kami</h1>
+      <p class="text-lg opacity-90">Kami siap membantu perjalanan tugas akhirmu sebagai mahasiswa/i, kapan pun kamu butuh.</p>
+    </div>
+  </section>
+
+  <!-- FORM KONTAK -->
+  <section class="py-20 fade-in-up">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl font-bold text-center mb-10">Kirim Pesan</h2>
+      <form id="contact-form" class="space-y-6 bg-white dark:bg-[#1e293b] p-8 rounded-2xl shadow-lg">
+        <div>
+          <label for="nama" class="block font-semibold mb-2">Nama Lengkap</label>
+          <input id="nama" name="nama" type="text" required
+            class="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-3 bg-transparent focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div>
+          <label for="email" class="block font-semibold mb-2">Email</label>
+          <input id="email" name="email" type="email" required
+            class="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-3 bg-transparent focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div>
+          <label for="pesan" class="block font-semibold mb-2">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" required
+            class="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-3 bg-transparent focus:ring-2 focus:ring-indigo-500"></textarea>
+        </div>
+
+        <button type="button" id="sendBtn"
+          class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition focus:ring-2 focus:ring-indigo-400">
+          <i class="fas fa-paper-plane mr-2"></i> Kirim Pesan
+        </button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-8">
+    <p>© <span id="year"></span> Skripsi Pro. Semua Hak Dilindungi.</p>
+    <p class="mt-2">
+      <a href="index.html" class="hover:underline">Beranda</a> |
+      <a href="privacy-policy.html" class="hover:underline">Kebijakan Privasi</a> |
+      <a href="terms.html" class="hover:underline">Syarat & Ketentuan</a>
+    </p>
+  </footer>
+  <!-- Main JS -->
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- Script Kirim Pesan ke WhatsApp -->
+  <script>
+    document.getElementById("sendBtn").addEventListener("click", function () {
+      const nama = document.getElementById("nama").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const pesan = document.getElementById("pesan").value.trim();
+
+      if (!nama || !email || !pesan) {
+        alert("Harap isi semua kolom terlebih dahulu.");
+        return;
+      }
+
+      const text = encodeURIComponent(
+        `Halo Skripsi Pro!\n\nNama: ${nama}\nEmail: ${email}\nPesan: ${pesan}`
+      );
+
+      window.open(`https://wa.me/6287773665508?text=${text}`, "_blank");
+    });
+  </script>
+</body>
+</html>
