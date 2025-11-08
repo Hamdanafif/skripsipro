@@ -10,31 +10,32 @@
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://namadomainmu.com/</loc>
+    <loc>https://hamdanafif.github.io/</loc>
     <lastmod>2025-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://namadomainmu.com/contact.html</loc>
+    <loc>https://hamdanafif.github.io/contact.html</loc>
     <lastmod>2025-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://namadomainmu.com/privacy-policy.html</loc>
+    <loc>https://hamdanafif.github.io/privacy-policy.html</loc>
     <lastmod>2025-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://namadomainmu.com/terms.html</loc>
+    <loc>https://hamdanafif.github.io/terms.html</loc>
     <lastmod>2025-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
 </urlset>
+
